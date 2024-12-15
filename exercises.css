@@ -45,27 +45,8 @@ div:nth-child(odd){
     font-weight: bold;
     
 }
-      
- /* td {
-    padding: 5px;
-    background-color: green;
-    width: 40px;
-    height: 40px;
-    text-align: left;
-  }
 
-  td:has(span) {
-    background-color: blue;
-}
-
-table{
-    
-    border-spacing: 10px;
-    
-}  */
-    
-
- td {
+td {
     padding: 5px;
     background-color: green;
     width: 40px;
@@ -74,13 +55,60 @@ table{
     display: inline-block;
     border-spacing: 20px;
     margin: 21px;
-  }
-
-  td:has(span) {
-    background-color: blue;
 }
 
 table{
     
     border-spacing: 10px;
-} 
+}
+
+td:nth-child(6n+4),
+td:nth-child(6n+5),
+td:nth-child(6n+6) {
+    background-color: blue;
+}
+/*
+td:has(span) {
+    background-color: blue;
+}
+*/
+/* Basic style for all <p> inside .ex4 */
+
+.ex4{
+    width: 100px;
+}
+
+p{
+    background-color: rgb(203, 238, 244);
+    border: black solid 2px;
+    width: 8%;
+    height: 40px;
+    display: inline-table;
+    margin-bottom: 50px;
+}
+
+/* كلهم بإستثناء أول خمسة*/
+p:nth-child(n+40):nth-child(-n+45) {
+    background-color: orange;
+}
+
+/* أول خمسة */
+p:nth-child(n+46):nth-child(-n+50) {
+    background-color: orange;
+}
+
+/* مربع من كل أربعة مربعات */
+p:nth-child(n+57):nth-child(-n+68):nth-child(4n-3){
+    background-color: orange;
+}
+
+/* آخر خمسة */
+p:nth-child(n+74):nth-child(-n+78) {
+    background-color: orange;
+}
+
+/* قبل الأخير */
+p:nth-child(88) {
+    background-color: orange;
+}
+
