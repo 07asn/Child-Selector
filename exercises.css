@@ -1,0 +1,86 @@
+
+      /*Exercise (1)*/
+p:nth-child(n+1):nth-child(-n+11):nth-child(odd) {
+    background-color: rgb(246, 255, 0);
+    border: black solid 2px;
+    width: 8.5%;
+    height: 40px;
+    display: inline-table;
+    margin-bottom: 50px;
+}
+
+p:nth-child(n+1):nth-child(-n+12):nth-child(even) {
+    background-color: green;
+    border: black solid 2px;
+    width: 8.5%;
+    height: 40px;
+    display: inline-table;
+    margin-top: 50px;
+}
+
+      /*Exercise (2)*/
+div:nth-child(even){
+    background-color: rgb(255, 0, 0);
+    border: black solid 2px;
+    width: 15%;
+    height: 30px;
+    display: inline-block;
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    display: none;
+}
+div:nth-child(odd){
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: black solid 2px;
+    width: 15%;
+    height: 30px;
+    display: inline-block;
+    margin-bottom: 50px;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    
+}
+      
+ /* td {
+    padding: 5px;
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    text-align: left;
+  }
+
+  td:has(span) {
+    background-color: blue;
+}
+
+table{
+    
+    border-spacing: 10px;
+    
+}  */
+    
+
+ td {
+    padding: 5px;
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    text-align: left;
+    display: inline-block;
+    border-spacing: 20px;
+    margin: 21px;
+  }
+
+  td:has(span) {
+    background-color: blue;
+}
+
+table{
+    
+    border-spacing: 10px;
+} 
