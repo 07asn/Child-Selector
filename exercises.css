@@ -18,7 +18,7 @@ p:nth-child(n+1):nth-child(-n+12):nth-child(even) {
     margin-top: 50px;
 }
 
-      /*Exercise (2)*/
+    /*Exercise (2)*/
 div:nth-child(even){
     background-color: rgb(255, 0, 0);
     border: black solid 2px;
@@ -46,33 +46,31 @@ div:nth-child(odd){
     
 }
 
-td {
-    padding: 5px;
+/*Exercise (3)*/
+span span span {
+    display:inline-block;
+    width: 25px;
+    height: 25px;
     background-color: green;
-    width: 40px;
-    height: 40px;
-    text-align: left;
-    display: inline-block;
-    border-spacing: 20px;
-    margin: 21px;
-}
+    padding: 10px;
+    margin :10px;
+    }
 
-table{
-    
-    border-spacing: 10px;
-}
-
-td:nth-child(6n+4),
-td:nth-child(6n+5),
-td:nth-child(6n+6) {
-    background-color: blue;
-}
-/*
-td:has(span) {
-    background-color: blue;
-}
-*/
-/* Basic style for all <p> inside .ex4 */
+    span > span:nth-child(1) > span:nth-child(4) ,
+    span > span:nth-child(1) > span:nth-child(5) ,
+    span > span:nth-child(1) > span:nth-child(6) ,
+    span > span:nth-child(2) > span:nth-child(1) ,
+    span > span:nth-child(2) > span:nth-child(2) ,
+    span > span:nth-child(2) > span:nth-child(3) ,
+    span > span:nth-child(2) > span:nth-child(7) ,
+    span > span:nth-child(2) > span:nth-child(8) ,
+    span > span:nth-child(2) > span:nth-child(9) ,
+    span > span:nth-child(3) > span:nth-child(4) ,
+    span > span:nth-child(3) > span:nth-child(5) ,
+    span > span:nth-child(3) > span:nth-child(6) 
+    {
+        background-color: blue;
+    }
 
 .ex4{
     width: 100px;
